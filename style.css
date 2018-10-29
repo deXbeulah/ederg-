@@ -1,0 +1,123 @@
+body{
+	padding-top:70px;
+}
+.intro{height:400px;background-image:url("photos/1.jpg");
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+@font-face {
+    font-family: navFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;}
+.navbar.navbar-default{
+	background-color: blue;
+	border-radius: 0;
+	height:70px;  
+}
+.navbar-brand{
+	font-size: 30px;
+	margin-top: 10px;
+}
+.nav.navbar-nav.navbar-right{
+	margin-top: 10px;
+}
+.nav.navbar-nav.navbar-right a{
+	font-size: 20px;
+	font-family: navFont;
+	color: white;
+}
+.nav.navbar-nav.navbar-right a:hover{
+	background-color: white;
+	color: blue;
+}
+.navbar-nav > li > .dropdown-menu { background-color:blue; }
+.nav.navbar-nav.navbar-right > .active > a,
+.nav.navbar-nav.navbar-right > .active > a:hover,
+.nav.navbar-nav.navbar-right > .active > a:focus {
+    color: white;
+    background: blue;
+    padding-left: 0;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.pagination>li>a,
+.pagination>li>span {
+  font-size: 17px;
+  background-color:blue;
+ 	color: white;
+}
+.pagination>li.active>a:focus, .pagination>li>a:hover {
+	font-size: 17px;
+  background: white;
+  color:blue;
+  transition: 2s;
+}
+.members img{height: 150px;width: 150px;margin-top:15px;}
+.required{font-size: 20px;color: red;}
+.breadcrumb{background-color: blue;}
+.breadcrumb a {color: white;text-decoration:none;}
+.iconic{
+		position:relative;
+		margin-top: 7px;
+	}
+.iconic >a > div{
+		width:40px;
+		height: 25px;
+		text-align:center;
+		line-height: 25px;
+		font-size:25px;
+		margin-bottom:20px;
+		color:#FAFAFA;
+	}
+.button{height:50px; width:50px; border-radius:50px;color: black;border:1px solid #FAFAFA;}
+.students img{width: 100%;}
+.card{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);}
+.container1{padding: 0 16px;}
+.container1::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.title {
+    color: grey;
+}
+.button_s {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.button_s:hover {
+    background-color: #555;
+}
+.students .col-xs-4{margin-top: 15px;}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.explore{
+  position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+}
+.form-horizontal input{
+  height:60px;
+}
+.form-horizontal select{
+  height: 60px;
+}
