@@ -1,0 +1,120 @@
+    .cardContainer 
+    {
+      padding-left:0;
+      margin-bottom:15px;
+      height:200px;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      transition: all .3s ease;
+      -webkit-perspective: 800px;
+      -moz-perspective: 800px;
+      -o-perspective: 800px;
+      perspective: 800px;
+    }
+
+
+.card1, .card2, .card3, .card4{
+      height:100%;
+      cursor: pointer;
+      -webkit-transition: -webkit-transform 0.6s;
+      -moz-transition: -moz-transform 0.6s;
+      -o-transition: -o-transform 0.6s;
+      transition: transform 0.6s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+
+    .card1.flipped, .card2.flipped, .card3.flipped, .card4.flipped 
+    {
+      -webkit-transform: rotateY( 180deg );
+      -moz-transform: rotateY( 180deg );
+      -o-transform: rotateY( 180deg );
+      transform: rotateY( 180deg );
+    }
+    .card1 .front, .card2 .front, .card3 .front, .card4 .front{
+      padding-left:2%;
+      padding-right:2%;
+      display: block;
+      font-size:16px;
+      width:100%;
+      height: 100%;
+      color: black;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .card1 .back, .card2 .back, .card3 .back, .card4 .back {
+      padding-left: 2%;
+      padding-right:2%;
+      display: block;
+      height: 100%;
+      width: 100%;
+      color:white;
+      position: absolute;
+      font-size: 16px;
+      background: #0000ff;
+      -webkit-transform: rotateY( 180deg );
+      -moz-transform: rotateY( 180deg );
+      -o-transform: rotateY( 180deg );
+      transform: rotateY( 180deg );
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+.front_content{height:80%}
+.back_content{overflow:auto;height:80%;background-color:#0000ff;}
+.front button{margin-top:10px;background-color:#0000ff;color:white;border:0;
+float:right;}
+.back .back_left{margin-top:10px;border:0;background-color:#0000ff;}
+.back .back_right{margin-top:10px;border:0;float:right;background-color:#0000ff;color:white}
+.back .back_right a{color:white;text-decoration:none;}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color:white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color:black;
+}
+
+/* The Close Button */
+.close {
+    color: #ff0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
